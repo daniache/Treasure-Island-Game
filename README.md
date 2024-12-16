@@ -7,6 +7,8 @@ It comes in two version: the web and the console version.
 
 WEB VERSION
 
+![treasure island](https://github.com/user-attachments/assets/b0f015f8-b9eb-4974-8c93-d6972e800eb9)
+
 TECNOLOGIES USED
 - Python 3.10+
 - Flask
