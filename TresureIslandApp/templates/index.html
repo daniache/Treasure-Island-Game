@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <!-- ASCII Art -->
+        <pre class="text-yellow-600 text-sm md:text-base font-mono whitespace-pre-wrap leading-tight mb-6">
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` ",__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+    </pre>
+
+        <!-- Welcome Message -->
+        <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-600 mb-6">Welcome to Treasure Island</h2>
+        <p class="text-lg md:text-xl font-medium mb-8 text-gray-700">Your mission is to find the treasure and navigate the challenges of this epic journey.</p>
+
+        <!-- Form to Enter Name -->
+        <form method="POST" class="bg-gray-200 shadow-lg rounded-lg p-6 max-w-lg mx-auto">
+            <label for="name" class="block text-xl font-bold text-gray-800 mb-4">Enter your name:</label>
+            <input type="text" id="name" name="name" class="block w-full p-2 border-2 border-yellow-500 rounded-lg text-black focus:outline-none focus:ring focus:ring-yellow-300" placeholder="Captain's Name..." required>
+            <button type="submit" class="mt-6 w-full bg-yellow-600 text-white text-lg font-bold py-3 rounded-lg hover:bg-yellow-700 transition duration-300">
+                Start Adventure
+            </button>
+        </form>
+    </div>
+{% endblock %}
